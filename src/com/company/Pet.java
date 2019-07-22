@@ -8,8 +8,6 @@ public class Pet {
     private Color color;
     Shelter shelter = new Shelter();
 
-    public Pet(int x) {
-    }
 
     public Pet() {
         setAge(1);
@@ -32,26 +30,6 @@ public class Pet {
 
     }
 
-    public final void getInfo(Dog dog, int num) {
-        switch (num) {
-            case 1:
-                String info = "Shelter's name: " + shelter.getName() + " \nShelter's address: " + shelter.getAddress() + " \n" +
-                        "Dog's name: " + dog.getName() + "\n" + "Dog's breed: " + dog.getBreed() + "\n" + "Commands: " + dog.getCommands() + "\n" +
-                        "Age: " + dog.getAge() + "\n" + "Color: " + dog.getColor() + "\n";
-                System.out.println(info);
-                break;
-            case 2:
-                info = "Dog's name: " + dog.getName() + "\n" + "Dog's breed: " + dog.getBreed() + "\n" +
-                        "Age: " + dog.getAge() + "\n" + "Color: " + dog.getColor() + "\n";
-                System.out.println(info);
-                break;
-            case 3:
-                info = "Dog's name: " + dog.getName() + "\n" + "Dog's breed: " + dog.getBreed() + "\n" + "Commands: " + dog.getCommands() + "\n" +
-                        "Age: " + dog.getAge() + "\n" + "Color: " + dog.getColor() + "\n";
-                System.out.println(info);
-                break;
-        }
-    }
 
     public int getAge() {
         return age;

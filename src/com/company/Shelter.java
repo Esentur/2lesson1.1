@@ -6,14 +6,14 @@ public class Shelter {
 
     public Shelter() {
         setName("default name");
-        setAddress("default address");
+        setAddress("default address\n");
     }
 
     public Shelter(String name, String address) {
         this.name = name;
         this.address = address;
         System.out.println("Selter's name: " + getName() + "\n" +
-                           "Shelter's address: " + getAddress() + "\n");
+                "Shelter's address: " + getAddress() + "\n");
     }
 
     public String getName() {

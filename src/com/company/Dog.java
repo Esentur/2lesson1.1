@@ -6,10 +6,11 @@ public final class Dog extends Pet {
     private String commands;
 
     public Dog() {
+        super();
         setName("Sharik");
         setBreed("Dvornyashka");
         setCommands("Fu");
-        new Pet();
+
     }
 
     public Dog(String name, String breed, Color color, Shelter shelter) {
@@ -43,6 +44,45 @@ public final class Dog extends Pet {
         }
     }
 
+    public final void getInfo(int num) {
+
+        switch (num) {
+
+            case 1:
+
+                String info = "Shelter's name: " + shelter.getName() + " \nShelter's address: " + shelter.getAddress() + " \n" +
+
+                        "Dog's name: " + getName() + "\n" + "Dog's breed: " + getBreed() + "\n" + "Commands: " + getCommands() + "\n" +
+
+                        "Age: " + getAge() + "\n" + "Color: " + getColor() + "\n";
+
+                System.out.println(info);
+
+                break;
+
+            case 2:
+
+                info = "Dog's name: " + getName() + "\n" + "Dog's breed: " + getBreed() + "\n" +
+
+                        "Age: " + getAge() + "\n" + "Color: " + getColor() + "\n";
+
+                System.out.println(info);
+
+                break;
+
+            case 3:
+
+                info = "Dog's name: " + getName() + "\n" + "Dog's breed: " + getBreed() + "\n" + "Commands: " + getCommands() + "\n" +
+
+                        "Age: " + getAge() + "\n" + "Color: " + getColor() + "\n";
+
+                System.out.println(info);
+
+                break;
+
+        }
+
+    }
 
 
     public String getName() {
